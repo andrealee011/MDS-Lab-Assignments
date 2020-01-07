@@ -1,5 +1,9 @@
 # Assignment from DSCI 512 Lab 1
 
+# import libraries
+import urllib.request
+import numpy as np
+
 class MarkovModel:
     
     def __init__(self, n):
