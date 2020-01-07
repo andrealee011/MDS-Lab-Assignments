@@ -1,6 +1,20 @@
 # Assignment from DSCI 571 Lab 4
-
 # Predict abalone age using 8 features (sex, length, diameter, height, whole weight, shucked weight, viscera weight, shell weight) and 1 response (rings)
+
+# Import libraries
+import numpy as np
+import pandas as pd
+import altair as alt
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler
+from sklearn.compose import ColumnTransformer
+from sklearn.preprocessing import OneHotEncoder
+from sklearn.model_selection import GridSearchCV
+from sklearn.linear_model import LinearRegression
+from sklearn.ensemble import RandomForestRegressor
+from sklearn.svm import SVR
+from sklearn.neighbors import KNeighborsRegressor
+from sklearn.metrics import mean_squared_error
 
 # 1. Load data
 abalone_df = pd.read_csv('abalone_age.csv')
